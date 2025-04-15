@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Interaktif</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="intro-screen">
+      <h1 class="intro-title">Kuis<span>Seru</span></h1>
+      <p class="intro-subtitle">Siap menguji pengetahuanmu?</p>
+      <button id="start-btn">Mulai Sekarang</button>
+    </div>
+  
+    <div class="container hidden" id="quiz-container">
+      <h1>Kuis Interaktif</h1>
+      <div id="quiz-box">
+        <div id="question">Pertanyaan akan muncul di sini</div>
+        <div id="options"></div>
+        <button id="next-btn">Pertanyaan Selanjutnya</button>
+      </div>
+      <div id="result-box" class="hidden">
+        <h2>🎉 Skor Akhir Kamu 🎉</h2>
+        <p id="score">0</p>
+        <p>Hebat! Kamu sudah menyelesaikan kuis ini!</p>
+        <button onclick="startQuiz()">Coba Lagi</button>
+      </div>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

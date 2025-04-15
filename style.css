@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  #question {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #options button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #next-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .correct {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .wrong {
+    background-color: #f44336;
+    color: white;
+  }
+  /* INTRO SCREEN */
+#intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-in-out;
+  z-index: 1000;
+}
+
+.intro-title {
+  font-size: 60px;
+  font-weight: bold;
+  animation: slideDown 1s ease-out;
+}
+
+.intro-title span {
+  color: #0167b5;
+}
+
+.intro-subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in;
+}
+
+#start-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #8a0406;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: fadeIn 2.5s ease-in;
+  transition: background-color 0.3s;
+}
+
+#start-btn:hover {
+  background-color: #ffe082;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#result-box {
+  text-align: center;
+  padding: 40px;
+}
+
+#score {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4CAF50;
+  background: #e8f5e9;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#result-box h2 {
+  font-size: 24px;
+  color: #ff4e50;
+}
+
+#result-box p {
+  font-size: 20px;
+  color: #555;
+}
+
+
